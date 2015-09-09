@@ -23,3 +23,8 @@
 /*.logo {
     height:15%;width:250px;margin-top:-30px;
 }*/
+
+
+img.carousel-inner {
+    height: 400px;
+}
