@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mailer.name %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @mailer.zipcode %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @mailer.message %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @mailer.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @mailer.email %>
+</p>
+
+<%= link_to 'Edit', edit_mailer_path(@mailer) %> |
+<%= link_to 'Back', mailers_path %>
