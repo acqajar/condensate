@@ -1396,7 +1396,8 @@ ul.page-footer-list li i { padding-right: 10px }
 }
 .h-service {
     border: 1px solid #eee;
-    margin-bottom: 25px;
+    height:220px;
+    width:370px;
 }
 #home-services .h-service-content h3 {
     padding-top: 40px;
