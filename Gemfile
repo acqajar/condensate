@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+
+gem 'mandrill-api'
+
 gem 'mail_form'
 
 gem 'simple_form'

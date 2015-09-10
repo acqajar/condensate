@@ -3,7 +3,7 @@ class CreateMailers < ActiveRecord::Migration
     create_table :mailers do |t|
       t.string :name
       t.string :zipcode
-      t.desc :message
+      t.text :message
       t.string :phone
       t.string :email
 

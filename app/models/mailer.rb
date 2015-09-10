@@ -1,4 +1,5 @@
 class Mailer < MailForm::Base
+ default to: 'condensate.io@gmail.com'
 
 
  def headers
