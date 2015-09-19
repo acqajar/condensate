@@ -1,70 +1,16 @@
 <header class="head-section" >
-      <div class="navbar navbar-default navbar-static-top container" >
-
-
-
-
-
-
-          <div class="navbar-collapse collapse">
-
-      <%= link_to root_path do%>     
+  <div class="navbar navbar-default navbar-static-top container" >
+    <div class="navbar-collapse collapse">
+      <%= link_to root_path do%>
         <img src = "https://scontent-lax3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/16983_892529670830604_7120612465135779645_n.png?oh=76fca8a2294b8e0e10d898142c6c4c19&oe=5675B9D3" style = "height:13%;width:25%;margin-top:-6px;">
       <% end %>
 
-              <ul class="nav navbar-nav">
-                  <!-- li class="dropdown">
-                      <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown"> <%= link_to "Home", homes_path %> <i class="fa fa-angle-down"></i>
-                      </a>
-
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="">Stuff</a>
-                          </li>
-
-                          <li>
-                              <a href="">Stuff Here</a>
-                          </li>
-
-                          <li>
-                              <a href="">Stuff here</a>
-                          </li>
-
-                      </ul>
-                  </li> -->
-
-
-
-
-
-                  <li>
-                       <%= link_to "About", abouts_path %>
-                  </li>
-
-
-
-
-                  <li>
-                       <%= link_to "Career", careers_path %>
-                  </li>
-
-
-
-
-
-<!-- 
-                  <li>
-                    <a href="blog-two-col.html">Blog</a>
-                  </li> -->
-
-
-                  <li>
-                      <%= link_to "Contact", contacts_path %>
-                  </li>
-
-                  <!-- <li><input class="form-control search" placeholder=" Search" type="text"></li> -->
-              </ul>
-          </div>
-      </div>
-    </header>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", abouts_path %></li>
+        <li><%= link_to "Career", careers_path %></li>
+        <li><%= link_to "Contact", contacts_path %></li>
+      </ul>
+    </div>
+  </div>
+</header>
