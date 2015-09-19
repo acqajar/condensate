@@ -71,46 +71,47 @@
           <h4>
             Drop us a line so that we can hear from you
           </h4>
-          <h5> WE would love to hear from you. <%= mail_to "condensate.io@gmail.com", "We wont bite :)", subject: "Give us a shout!" %> </h5>
+
           <div class="contact-form">
-            <form role="form">
+            <%= form_for @contact, :html => {:class => 'form-group' } do |f| %>
+
               <div class="form-group">
-                <label for="name">
-                  Name
-                </label>
-                <input type="text" placeholder="" id="name" class="form-control">
+                <%= f.label :name %>
+                <%= f.text_field :name, :required => true, :class => 'form-control' %>
               </div>
+
               <div class="form-group">
-                <label for="email">
-                  Email
-                </label>
-                <input type="text" placeholder="" id="email" class="form-control">
+                <%= f.label :email %>
+                <%= f.text_field :email, :required => true, :class => 'form-control' %>
               </div>
+
               <div class="form-group">
-                <label for="phone">
-                  Phone
-                </label>
-                <input type="text" id="phone" class="form-control">
+                <%= f.label :phone %>
+                <%= f.text_field :phone, :as => :text, :required => true, :class => 'form-control' %>
               </div>
-               <div class="form-group">
-                <label for="zipcode">
-                  Zipcode
-                </label>
-                <input type="text" placeholder="" id="zip" class="form-control">
-              </div>
+
               <div class="form-group">
-                <label for="phone">
-                  Message
-                </label>
-                <textarea placeholder="" rows="5" class="form-control">
-                </textarea>
+                <%= f.label :zip_code %>
+                <%= f.text_field :zip_code, :as => :text, :required => true, :class => 'form-control' %>
               </div>
-              <button class="btn btn-info" type="submit">
-                Get a Free Quote!
-              </button>
-            </form>
+
+              <div class="form-group">
+                <%= f.label :message %>
+                <%= f.text_area :message, :as => :text, :required => true, :class => 'form-control' %>
+              </div>
+
+              <div class= "hidden">
+                <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+              </div>
+
+              <div>
+                </br>
+                <%= f.submit 'Get a Free Quote!', :class=> "btn btn-info" %>
+              </div>
+            <% end %>
 
           </div>
+
         </div>
       </div>
 
