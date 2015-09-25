@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :contacts
   resources :careers
-  resources :abouts
+  # resources :abouts
   resources :homes
 
   match '/contacts', to: 'contacts#new', via: 'get'
