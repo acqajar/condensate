@@ -1,3 +1,30 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,800);
+body {
+  background-color: #194857;
+}
+.clipped {
+  background: url(https://images.unsplash.com/photo-1438503733096-e5c5560f05ed?fit=crop&fm=jpg&q=80&w=1150) no-repeat center center;
+  background-size: 100% auto;
+  color: #fff;
+  /* Fallback text color */
+  text-align: center;
+  padding: 1em;
+  /* -webkit-background-clip clips the background of the element to the text */
+  -webkit-text-fill-color: transparent;
+  /* overrides the white text color in webkit browsers */
+  -webkit-background-clip: text;
+  /* Unfortunately, as you can see from the prefixes used, these properties currently only work in the handful of browsers that support them, so they won’t work in Firefox or IE, for example. */
+}
+h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19vw;
+  font-weight: 900;
+  letter-spacing: -3px;
+  line-height: 1;
+}
